@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-// import logoImg from '../../assets/logo.jpeg';
+import logoImg from '../../assets/logo.jpeg';
 import "../authentication/style.css";
 
 import { AuthContext } from '../../context/AuthContext';
@@ -14,9 +14,17 @@ export const NavComp = () => {
         
       
         <ul>
-          <li><a class="nav-link scrollto active" href="www.google.com">Home</a></li>
+          <li><a class="nav-link scrollto active" href="https://www.youtube.com">Home</a></li>
+          <li><div className="container-fluid" style={{backgroundImage: `url(assets/tap1.jpeg)`}}>
+                  <div className="navbar-brand">
+                 <img src={logoImg} alt="logo" height="55" />
+                  </div>      </div>  </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+        {/* <div className="container-fluid" style={{backgroundImage: `url(assets/tap1.jpeg)`}}>
+          <div className="navbar-brand">
+          <img src={logoImg} alt="logo" height="75" />
+          </div> */}
     
         <div className="d-flex">
           <div className="col">
@@ -40,7 +48,7 @@ export const NavComp = () => {
             )}
           </div>
         </div>
-      
+      {/* </div> */}
     </nav>
   );
 };
