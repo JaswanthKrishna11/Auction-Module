@@ -14,7 +14,7 @@ export const NavComp = () => {
         
       
         <ul>
-          <li><a class="nav-link scrollto active" href="https://www.youtube.com">Home</a></li>
+          <li><a class="nav-link scrollto active" href="http://localhost:3000">Home</a></li>
           <li><div className="container-fluid" style={{backgroundImage: `url(assets/tap1.jpeg)`}}>
                   <div className="navbar-brand">
                  <img src={logoImg} alt="logo" height="55" />
