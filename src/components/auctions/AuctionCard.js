@@ -37,21 +37,21 @@ const renderer = ({ days, hours, minutes, seconds, completed, props }) => {
                   onClick={() => props.bidAuction()}
                   className="btn btn-outline-secondary"
                 >
-                  $100
+                  ₹100
                 </div>
                 <div
                   onClick={() => props.bidAuction()}
                   className="btn btn-outline-secondary"
                   style={{marginLeft:`2px`}}
                 >
-                  $500
+                  ₹500
                 </div>
                 <div
                   onClick={() => props.bidAuction()}
                   className="btn btn-outline-secondary"
                   style={{marginLeft:`2px`}}
                 >
-                  $2000
+                  ₹2000
                 </div>
                 </>
               ) : props.owner.email === props.item.email ? (
@@ -66,13 +66,13 @@ const renderer = ({ days, hours, minutes, seconds, completed, props }) => {
               ) : (
                 <>
                   <div onClick={() => props.bidAuction(props.item.id, props.item.curPrice)} style={{marginLeft:`2px`}} className="btn btn-outline-secondary">
-                      $100
+                      ₹100
                   </div>
                   <div onClick={() => props.bidAuction1(props.item.id, props.item.curPrice)} style={{marginLeft:`2px`}} className="btn btn-outline-secondary">
-                      $500
+                      ₹500
                   </div>
                   <div onClick={() => props.bidAuction2(props.item.id, props.item.curPrice)} style={{marginLeft:`2px`}} className="btn btn-outline-secondary">
-                      $2000
+                      ₹2000
                   </div>
                 
                  
